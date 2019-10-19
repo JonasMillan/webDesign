@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>clase 2</h1>
+
+    <h2>listas ordenadas y desordenadas</h2>
+    <!-- <ol></ol> serian listas ordenadas -->
+    <ol id="cosas">
+        <li> hacer las compras </li>
+        <li>salir a trotar</li>
+    </ol>
+    <!-- <ul></ul> seria una lista desordenada -->
+    <ul>
+        <li> comida </li>
+        <li> estudios</li>
+    </ul>
+    <!-- anidar listas con listas -->
+    <ol>
+        <li>
+            Hacer compras
+            <ul>
+                <li>carne</li>
+                <li>vinito</li>
+            </ul>
+        </li>
+    </ol>
+    <!-- listas por definicion -->
+    <dl>
+        <dt>comida</dt>
+        <dd>se usa para sobrevivir</dd>
+    </dl>
+    <!-- tablas -->
+    <table border="3" cellpadding="3" cellspacing="1">
+        <thead>
+            <th>titulo 1</th>
+            <th>titulo 2</th>
+            <th>titulo 3</th>
+        </thead>
+        <!-- tbody es el cuerpo -->
+        <tbody>
+            <!-- tr = table rows = filas en la tabla  -->
+            <tr>
+                <!-- td = es para hacer una columna -->
+                <td>fila 1 columna 1</td>
+                <td>fila 1 columna 2</td>
+                <td>fila 1 columna 3</td>
+            </tr>
+            <tr>
+                <td>fila 2 columna 1</td>
+                <td>fila 2 columna 2</td>
+                <td>fila 2 columna 3</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br><br><br><br><br>
+    <!-- FORMULARIOS -->
+
+    <form action="" method="GET" enctype="application/x-www-form-urlencoded">
+        <fieldset>
+            <legend>comida</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" placeholder="nombre" id="nombre" name="nombre"/>
+            <br>
+            <input type="date">
+            <br>
+            <input type="email">
+            <br>
+        </fieldset>
+        <input type="password" placeholder="password">
+        <br>
+        <textarea name="texto" id="" cols="30" rows="10"></textarea>
+        <br>
+        <select name="talles" id="">
+            <option value="L">Large</option>
+            <option value="M">M</option>
+        </select>
+        <br>
+        <button>go</button>
+        <input type="submit" value="go"/>
+    </form>
+
+    <!-- audio y video  -->
+ 
+    <video width="240" height="240"  src="multimedia/video.mp4" loop controls>
+        Tu navegador no soporta este video.
+    </video>
+
+    <br>
+    <br>
+
+    <audio controls>
+        <source src="multimedia/musica.mp3" type="audio/ogg">
+        Tu navegador no soporta este audio.
+    </audio>
+    <br>
+    <br>
+    <h2>
+        <a href="gatitos.html">click para ver gatitos</a>
+    </h2>
+    <a href="https://www.google.com">google</a>
+    <a href="#cosas">ir listas</a>
+</body>
+</html>
